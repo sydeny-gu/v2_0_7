@@ -1,0 +1,13 @@
+
+/*
+ * Release Note
+ */
+
+	v3.0a
+	1. First release for 8195a	
+	
+	v3.0c
+	1. Fix WPS and long PassPrhase issue
+
+	
+	

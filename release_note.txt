@@ -1,0 +1,163 @@
+
+/*
+ * Release Note
+ */
+
+	v01.1
+	2013/7/14
+	1. First release
+
+	V01.2 
+	2013/8/9
+	1. Support ping test
+	2. Enable WPA2-PSK AES
+	3. Provide API for STA mode control
+
+	V01.3
+	2013/9/6
+	1. Support AP mode
+	2. Provide MP functions
+	
+	V01.4
+	2013/10/28
+	1. Support TKIP
+	2. Provide interactive mode
+
+	V01.5
+	2013/11/12
+	1. Support throughpu test
+	V01.5b
+	2013/12/31
+	1. Support 8189em
+	
+	v02.1a
+	2014/1/7
+	1. Support STM3220G and STM3223_ENYS
+	2. Reserve more sram space for application
+	3. Support Scan API
+	
+	v02.2a
+	2014/2/21
+	1. Use new directory architecture
+	2. Support STM32F4xx standard peripheral driver
+	3. Support STM32F4xx REALTEK EVB
+	4. Support promisc mode
+	
+	v02.3a
+	2014/3/21
+	1. Support Simple Config.
+	2. Support web configuration for AP mode.
+	3. Reduce RAM occupancy.
+
+V02.4
+	v02.4a
+	2014/6/6
+	1. Support WPS.
+	2. Reduce RAM occupancy.
+	
+	v02.4b
+	2014/6/5
+	1. Support SSL.
+	2. Support wifi_start_webserver command in interactive mode. 
+	3. Support stm32f10x.
+	
+	v02.4c
+	2014/6/26
+	1. Fix wpa/wpa2 mixed AP linking failed.
+	2. Fix simple config with WEP(HEX) AP failed.
+	3. Update iOS simple config apk.
+
+	v02.4d
+	2014/7/1
+	1. Fix ttcp sometimes can not terminate.
+
+	v02.4e
+	2014/7/9
+	1. Update Android simple config APK.
+	2. Fix some WPS issues.
+
+	v02.4f
+	2014/7/14
+	1. Update partial scan feature.
+	2. Update related doc.
+
+V02.5
+	v02.5a
+	2014/8/6
+	1. Reduce RAM occupancy.
+	2. Support STA+AP Concurrent mode.
+
+	v02.5b
+	2014/8/22
+	1. Add mbed api for stm32f4xx
+
+	v02.5c
+	2014/9/5
+	1. Remove ttcp and support iperf for throughput test.
+
+	v02.5d
+	2014/10/16
+	1. Reduce RAM occupancy about 6KBytes.
+	2. Add cmd "iwpriv write_mac xx:xx:xx:xx:xx:xx" to change MAC address temporarily. 
+	The new MAC address will be valid after wifi_off/wifi_on and until board reset.
+
+	v02.5e
+	2014/11/18
+	1. Added wifi_set_mac_address xx:xx:xx:xx:xx:xx in interactive mode.
+	2. Acquire a random mac address when first power on the board, and store mac address to flash.
+	3. Read efuse_map.c instead of efuse by default.
+	
+	v02.5f
+	2014/12/8
+	1. Add stm32f1xx bootloader project.
+	2. Enable config mac address outside wlanlib.
+	3. Fix mp tx issue.
+	4. Update efuse_map.c
+
+	v02.5g
+	2015/1/16
+	1. Revise report signal strength.
+	2. Disable packet forward in STA mode.
+	3. Upgrade Freertos 8.1.2 for STM32F4xx MDK project.
+	   Upgrade Freertos 8.0.1 for other projects.
+	4. Update Android simple config app. 
+	
+V02.6
+	v02.6a
+	2015/1/30
+	1. Revise wifi api for scalability.
+	2. Revise simple config to shorten configure time.
+	3. Add common AT command API.
+	   You can unmark start_interactive_mode() in main.c to use legacy commands.
+	   AT commands for MP is not ready now.
+
+	v02.6b
+	2015/3/20
+	1. Fix issues about promisc mode.
+	2. Add WOWLAN Function.
+	3. Update efuse_map.c.
+    	4. fix simple config parse for aes/tkip mixed encrypt
+
+	v02.6c
+	2015/4/10
+	1. Fix simple config with hidden ssid and feedback ssid is NULL
+	2. Fix MP tx hardfault
+	3. Fix TKIP connect fail when call wifi_connect_local
+	4. Fix F2xx WoWLAN
+
+	v02.6d
+	2015/5/8
+	1. Fix simple config app for android
+	2. Add wlan fast connect
+	3. Add hidden ssid scan and bssid connect
+	4. Fix mp tx stuck
+
+	v02.6e-SimpleConfigWizard 
+	2015/11/19
+	1. Change simple config app to simple config wizard
+	2. Add airkiss 2.0
+	3. Revise read efuse map
+	4. Fix connection failed with password length AES-64 or AES-63
+	5. Fix join mix security mode
+	6. Fix simple config PIN mismatch
+
